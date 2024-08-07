@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,200;1,200&family=Sankofa+Display&display=swap');
+
+::selection {
+    background-color: cornflowerblue;
+    color: white;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Overpass", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+/* colors */
+
+.wh {
+    color: white;
+}
+.bl {
+    color: cornflowerblue;
+}
+
+/* start */
+
+.start {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.bigText {
+    font-size: 150px;
+}
+.smallText {
+    color: rgb(134, 134, 134);
+}
+
+/* middle */
+
+.flexStart {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 80%;
+    flex-direction: column;
+}
+.flex {
+    display: flex;
+    width: 100%;
+    margin-top: 12px;
+}
+.left, .right {
+    height: 70px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left {
+    width: 10%;
+    display: flex;
+    justify-content: flex-end;
+}
+.right {
+    width: 90%;
+}
+.a3 {
+    width: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.a2 {
+    width: 65%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.a1 {
+    width: 30%;
+    font-size: 20px;
+}
+.flexImg {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.miniBtn {
+    padding: 10px;
+    border-radius: 8px;
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    text-decoration: none;
+    transition: 1s;
+    cursor: pointer;
+}
+.miniBtn:hover {
+    background-color: white;
+    color: black;
+    border: black;
+}
+center {
+    background-color: black;
+}
+body {
+    background-color: black;
+}
+
+/* media */
+
+@media (max-width:800px) {
+    .bigText {
+        font-size: 100px;
+    }
+    .forD, .forC {
+        display: none !important;
+    }
+    .a3 {
+        display: none;
+    }
+    .a2 {
+        display: none;
+    }
+    .a1 {
+        width: 100%;
+    }
+}
